@@ -42,5 +42,5 @@ end
 GLOBAL.PositionRecipe = PositionRecipe
 
 -- Example of Usage here:
--- GLOBAL.PositionRecipe("axe", 4) -- Puts researchlab at fourth position in the science tab
+-- GLOBAL.PositionRecipe("axe", 4) -- Puts axe at fourth position in the tools tab
 -- Keep in mind there are hidden crafting recipes in the tab that are revealed with science machine.
