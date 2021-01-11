@@ -15,15 +15,12 @@ function PositionRecipe(recname, index)
     for recipe_name, recipe in pairs(recipe_table) do
         if recipe.tab == tab_to_sort then
             table.insert(relative_indexes, recipe.sortkey)
-            print("Inserting key:",recipe.sortkey)
         end
     end
 
     -- Sort the keys found in the tab
     table.sort(relative_indexes, function(a,b) return a < b end)
-    for k,v in ipairs(relative_indexes) do
-        print("KV",k,v)
-    end
+
     -- Calculate new index
     local new_index = relative_indexes[index]
     recipe_table[recname].sortkey = new_index
@@ -33,7 +30,6 @@ function PositionRecipe(recname, index)
     for recipe_name, recipe in pairs(recipe_table) do
         if recipe.sortkey == nil or new_index == nil then print("?",recipe.sortkey,new_index) return end
         if recipe.sortkey >= new_index then
-            print("Recipe number:",recipe.sortkey,"increased by 1")
             recipe.sortkey = recipe.sortkey + 1
         end
     end
