@@ -7,7 +7,7 @@ To use the functionality of this mod, download this repository as a ZIP file and
 Alternatively, you can go to the [modmain](https://github.com/domo106/DST-PositionRecipe-Mod/blob/main/modmain.lua) and copy/paste the PositionRecipe into your code. If you do this, you'll want to call PositionRecipe without the "GLOBAL." before it.
 
 ## Usage
-Once the mod is in the mods folder (or you've copy/pasted the function) you can use the following function added to the GLOBAL singleton:
+Once the mod is in the mods folder you can use the function added to the GLOBAL singleton. If you've copy/pasted the function, use it like a normal function:
 
 `GLOBAL.PositionRecipe(recipe_name, position)`
 
