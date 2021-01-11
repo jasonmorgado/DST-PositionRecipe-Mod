@@ -1,11 +1,7 @@
-GLOBAL.require("constants")
-
-recipe_table = GLOBAL.AllRecipes
-
 function PositionRecipe(recname, index)
     -- Repositions a recipe in the recipe table to a given index
     -- Reminder that indexes start at 1
-
+    local recipe_table = GLOBAL.AllRecipes
     local recipe_to_move = recipe_table[recname]
     if recipe_to_move == nil then return end
     
