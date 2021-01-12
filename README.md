@@ -2,7 +2,7 @@
 In Don't Starve, using the AddRecipe function automatically sends the recipe to the bottom of the crafting tab, which can be a little annoying. This mod adds a function that allows other mods to easily reposition crafting recipes in their crafting tabs.
  
 ## Download
-To use the functionality of this mod, download this repository as a ZIP file and unzip it into the mods folder. This will add PositionRecipe to the Global singleton. Probably not the best idea if it's not on the steam workshop yet (it's not).
+To use the functionality of this mod, download this repository as a ZIP file and unzip it into the mods folder. This will add PositionRecipe to the Global singleton. Probably not the best idea if you plan on publishing your mod, if this mod is not on the steam workshop yet (it's not).
 
 Alternatively, you can go to the [modmain](https://github.com/domo106/DST-PositionRecipe-Mod/blob/main/modmain.lua) and copy/paste the PositionRecipe into your code. If you do this, you'll want to call PositionRecipe without the "GLOBAL." before it.
 
